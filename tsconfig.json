@@ -19,7 +19,15 @@
     "node_modules"
   ],
   "files": [
-    "src/bootstrap.ts",
-    "src/component/greeting/greeting.ts"
-  ]
+    "src/app/app.ts",
+    "src/app/bootstrap.ts",
+    "src/app/form.ts",
+    "src/app/greeting/greeting.ts",
+    "src/app/item.ts",
+    "src/app/list.ts",
+    "src/app/main.ts"
+  ],
+  "atom": {
+    "rewriteTsconfig": true
+  }
 }
