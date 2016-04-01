@@ -23,6 +23,7 @@
     "src/app/bootstrap.ts",
     "src/app/components/form.ts",
     "src/app/components/item.ts",
+    "src/app/components/list-service.ts",
     "src/app/components/list.ts",
     "src/app/main.ts"
   ],

@@ -1,10 +1,11 @@
 import {Component} from 'angular2/core';
 import Item from './item';
-import {ListService} from './list';
+import {ListService} from './list-service';
 
 @Component({
   selector: 'todo-form',
-  templateUrl: 'app/components/form.html'
+  templateUrl: 'app/components/form.html',
+  providers: [ListService]
 })
 export class Form {
   theTask: string = '';
@@ -26,8 +27,4 @@ export class Form {
     }
     return '';
   }
-
-  // ngAfterViewInit() {
-  //   console.log('foo', theList);
-  // }
 }
