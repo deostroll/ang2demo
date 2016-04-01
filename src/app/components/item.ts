@@ -1,4 +1,4 @@
-export class Item {
+export default class Item {
   public task: string;
   public isCompleted: boolean;
   public id: number;

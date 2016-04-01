@@ -1,5 +1,16 @@
-<ul>
-  <li *ng-for="#item in items">
-    <input type="checkbox"/ /> {{ item.task }}
-  </li>
-</ul>
+<table class="table table-condensed" *ngIf="items.length">
+  <tbody>
+    <tr *ngFor="#item of items">
+      <td>
+        <input type="checkbox"/>
+      </td>
+      <td>
+        {{item.task}}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p *ngIf="!items.length">
+  No tasks yet!
+</p>

@@ -1,6 +1,6 @@
 import {Component} from 'angular2/core';
-import List from './components/list';
-import Form from './components/form';
+import {List} from './components/list';
+import {Form} from './components/form';
 
 @Component({
   selector: 'my-app',
@@ -11,7 +11,7 @@ import Form from './components/form';
       <todo-form></todo-form>
       <list></list>
     </div>
-  `  
+  `
 })
 export class App {
 
