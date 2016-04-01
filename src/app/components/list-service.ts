@@ -9,18 +9,18 @@ export class ListService {
 
   constructor () {
     console.log('foo');
-    let e = new Error('dummy');
-    let stack = e.stack.replace(/^[^\(]+?[\n$]/gm, '')
-        .replace(/^\s+at\s+/gm, '')
-        .replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@')
-        .split('\n');
-    console.log(stack);
+    // let e = new Error('dummy');
+    // let stack = e.stack.replace(/^[^\(]+?[\n$]/gm, '')
+    //     .replace(/^\s+at\s+/gm, '')
+    //     .replace(/^Object.<anonymous>\s*\(/gm, '{anonymous}()@')
+    //     .split('\n');
+    // console.log(stack);
   }
 
   add(item: Item) {
     item.id = this._getUniqueId();
     this.items.push(item);
-    this._fireOnChange();
+    // this._fireOnChange();
   }
 
   remove(id: number) {
@@ -35,7 +35,7 @@ export class ListService {
       throw new Error('item does not exist');
     }
     this.items.splice(i, 1);
-    this._fireOnChange();
+    // this._fireOnChange();
   }
 
   _getUniqueId() {
