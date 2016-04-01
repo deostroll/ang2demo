@@ -21,10 +21,9 @@
   "files": [
     "src/app/app.ts",
     "src/app/bootstrap.ts",
-    "src/app/form.ts",
-    "src/app/greeting/greeting.ts",
-    "src/app/item.ts",
-    "src/app/list.ts",
+    "src/app/components/form.ts",
+    "src/app/components/item.ts",
+    "src/app/components/list.ts",
     "src/app/main.ts"
   ],
   "atom": {
