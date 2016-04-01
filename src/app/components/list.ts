@@ -9,8 +9,7 @@ import {ListService} from './list-service';
 @Component({
   selector: 'list',
   templateUrl: 'app/components/list.html',
-  directives: [CORE_DIRECTIVES],
-  providers: [ListService]
+  directives: [CORE_DIRECTIVES]
 })
 export class List {
   items: Array<Item> = [];

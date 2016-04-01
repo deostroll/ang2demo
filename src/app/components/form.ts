@@ -4,8 +4,7 @@ import {ListService} from './list-service';
 
 @Component({
   selector: 'todo-form',
-  templateUrl: 'app/components/form.html',
-  providers: [ListService]
+  templateUrl: 'app/components/form.html'
 })
 export class Form {
   theTask: string = '';
